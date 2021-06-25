@@ -68,7 +68,7 @@ export async function getStaticPaths() {
         meetUpId: meetup._id.toString(),
       },
     })), //indicates that no page needs be created at build time
-    fallback: false, //indicates the type of fallback
+    fallback: "blocking", //indicates the type of fallback
   };
 }
 
